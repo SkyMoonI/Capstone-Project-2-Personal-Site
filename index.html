@@ -3,9 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gokay Iseri - Portfolio showcasing web and game development projects."
+    />
+    <meta name="author" content="Gokay Iseri" />
     <title>Gokay Iseri</title>
 
     <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/about-me.css" />
     <link rel="stylesheet" href="./styles/skills.css" />
@@ -29,14 +35,24 @@
     />
   </head>
   <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <!-- Title -->
-    <div class="container header">
-      <h1>Hey there! I'm Gokay Iseri</h1>
-      <h2>Web Developer</h2>
-    </div>
+    <header class="container header" id="home">
+      <h1>Hi, I'm Gökay İşeri</h1>
+      <h2>Full-Stack Developer | Game Dev Enthusiast</h2>
+    </header>
 
     <!-- About me -->
-    <div class="container about-me about-me-background">
+    <section class="container about-me about-me-background" id="about">
       <img class="profile-image" src="./images/GokayIseri.jpg" alt="me" />
       <div class="paragraph">
         <h2>Who am I?</h2>
@@ -65,10 +81,10 @@
           to learning and growing as a developer.
         </p>
       </div>
-    </div>
+    </section>
 
     <!-- Skills -->
-    <div class="container skills skills-background">
+    <section class="container skills skills-background" id="skills">
       <h3>Skills</h3>
       <div class="skills-section">
         <div>
@@ -78,6 +94,10 @@
         <div>
           <img src="./images/css-logo.png" alt="" />
           <p>CSS</p>
+        </div>
+        <div>
+          <img src="./images/JavaScript-Logo.png" alt="" />
+          <p>JS</p>
         </div>
         <div>
           <img src="./images/unity-logo.png" alt="" />
@@ -96,40 +116,55 @@
           <p>SOLID Principles</p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Recent Projects -->
-    <div class="container recent-projects recent-projects-background">
+    <section
+      class="container recent-projects recent-projects-background"
+      id="projects"
+    >
       <h2>Recent Projects</h2>
-      <div class="project">
-        <a
-          href="https://github.com/SkyMoonI/Web-Development-Projects/tree/main/CSS/Bootstrap/11.3%20TinDog%20Project"
-          target="_blank"
-          ><img src="../images/Tindog.png" alt=""
-        /></a>
-        <p><strong>Tindog</strong></p>
-        <p>Bootcamp Project to build a website with Bootstrap.</p>
+      <div class="projects-section">
+        <div class="project">
+          <div>
+            <a
+              href="https://github.com/SkyMoonI/Web-Development-Projects/tree/main/CSS/Bootstrap/11.3%20TinDog%20Project"
+              target="_blank"
+              ><img src="../images/Tindog.png" alt=""
+            /></a>
+          </div>
+
+          <p><strong>Tindog</strong></p>
+          <p>Bootcamp Project to build a website with Bootstrap.</p>
+        </div>
+        <div class="project">
+          <div>
+            <a
+              href="https://github.com/SkyMoonI/Web-Development-Projects/tree/main/CSS/Grid/10.3%20Mondrian%20Project"
+              target="_blank"
+              ><img src="./images/Mondrian.png" alt=""
+            /></a>
+          </div>
+          <p><strong>Mondrian Project</strong></p>
+          <p>Bootcamp Project to recrate an art piece with CSS grid.</p>
+        </div>
+        <div class="project">
+          <div>
+            <a
+              href="https://github.com/SkyMoonI/Capstone-Project-2-Personal-Site"
+              target="_blank"
+              ><img src="./images/website.png" alt=""
+            /></a>
+          </div>
+
+          <p><strong>Website</strong></p>
+          <p>Designed and created a portfolio website with HTML and CSS.</p>
+        </div>
       </div>
-      <div class="project">
-        <a
-          href="https://github.com/SkyMoonI/Web-Development-Projects/tree/main/CSS/Grid/10.3%20Mondrian%20Project"
-          target="_blank"
-          ><img src="./images/Mondrian.png" alt=""
-        /></a>
-        <p><strong>Mondrian Project</strong></p>
-        <p>Bootcamp Project to recrate an art piece with CSS grid.</p>
-      </div>
-      <div class="project">
-        <a href="https://skymooni.github.io" target="_blank"
-          ><img src="./images/website.png" alt=""
-        /></a>
-        <p><strong>Website</strong></p>
-        <p>Designed and created a portfolio website with HTML and CSS.</p>
-      </div>
-    </div>
+    </section>
 
     <!-- Contact me -->
-    <div class="container contact-me contact-me-background">
+    <section class="container contact-me contact-me-background" id="contact">
       <h3>Let's Connect!</h3>
       <h4>I'm always open to new opportunities and collaborations.</h4>
       <div class="contact-me-section">
@@ -151,11 +186,11 @@
           /></a>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <div class="footer">
+    <footer>
       <p>© Gökay İşeri. All rights reserved.</p>
-    </div>
+    </footer>
   </body>
 </html>

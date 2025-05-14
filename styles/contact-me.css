@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 50px;
 }
 
@@ -10,14 +11,6 @@
   background-color: #e3fdf1;
 }
 
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-}
 .contact-me img {
   height: 50px;
   width: 55px;
